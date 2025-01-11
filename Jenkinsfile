@@ -26,8 +26,8 @@ pipeline {
                     sh """
                     curl -H "Authorization: Bearer $NETLIFY_TOKEN" \
                          -F "file=@$SITE_DIR.zip" \
-                         -F "site_id=<votre-site-id>" \
-                         https://api.netlify.com/api/v1/sites/<votre-site-id>/deploys
+                         -F "site_id=459bc124-f5cb-4955-a53c-552c8a868ea4" \
+                         https://api.netlify.com/api/v1/sites/459bc124-f5cb-4955-a53c-552c8a868ea4/deploys
                     """
                 }
             }
