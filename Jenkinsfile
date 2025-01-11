@@ -3,6 +3,7 @@ pipeline {
 
     environment {
         NETLIFY_TOKEN = credentials('netlify_token') // Ajouter votre token dans les credentials Jenkins
+        GIT_CREDENTIALS = credentials('github_auth') // Replace 'git_credentials' with your credentials ID
         SITE_DIR = 'index.html'       // Remplacez par le c hemin de votre site
     }
 
