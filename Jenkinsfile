@@ -17,12 +17,8 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 sh """
-                if ! command -v zip > /dev/null; then
-                    echo "Installing zip..."
-                    apt-get update &&  apt-get install zip -y
-                else
-                    echo "zip is already installed."
-                fi
+                    echo "trying to install sudo"
+                    apt-get install sudo -y
                 """
             }
         }
