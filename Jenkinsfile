@@ -14,6 +14,20 @@ pipeline {
             }
         }
 
+        stage('Install Dependencies') {
+            steps {
+                sh """
+                if ! command -v zip > /dev/null; then
+                    echo "Installing zip..."
+                    sudo apt-get update && sudo apt-get install zip -y
+                else
+                    echo "zip is already installed."
+                fi
+                """
+            }
+        }
+
+
         stage('Build') {
             steps {
                 echo 'Building zip file for deployment'
