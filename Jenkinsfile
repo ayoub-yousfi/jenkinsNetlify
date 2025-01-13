@@ -17,7 +17,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building zip file for deployment'
+                ls -al $SITE_DIR.zip
                 sh "zip -r $SITE_DIR.zip ."
+                echo 'after building the zip file for deployment'
+
             }
         }
 
