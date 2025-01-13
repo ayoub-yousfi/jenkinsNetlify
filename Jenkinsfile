@@ -19,7 +19,7 @@ pipeline {
                 sh """
                 if ! command -v zip > /dev/null; then
                     echo "Installing zip..."
-                    sudo apt-get update && sudo apt-get install zip -y
+                    apt-get update &&  apt-get install zip -y
                 else
                     echo "zip is already installed."
                 fi
