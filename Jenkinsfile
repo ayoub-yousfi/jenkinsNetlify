@@ -14,14 +14,14 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
-            steps {
-                sh """
-                    echo "trying to install sudo"
-                    apt-get install sudo -y
-                """
-            }
-        }
+        // stage('Install Dependencies') {
+        //     steps {
+        //         sh """
+        //             echo "trying to install sudo"
+        //             apt-get install sudo -y
+        //         """
+        //     }
+        // }
 
 
         stage('Build') {
