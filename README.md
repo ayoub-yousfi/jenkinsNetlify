@@ -53,6 +53,9 @@ This guide outlines the process of deploying a static website on Netlify using J
 2. Commit and push the changes to GitHub.
 3. Rerun the Jenkins pipeline to update the deployment on Netlify.
 
+
+![Alt Text](pipeline.PNG)
+
 ---
 
 ## Summary
