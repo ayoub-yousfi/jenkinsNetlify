@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        NETLIFY_TOKEN = credentials('netlify_token') // Ajouter votre token dans les credentials Jenkins
-        GIT_CREDENTIALS = credentials('github_auth') // Replace 'git_credentials' with your credentials ID
-        SITE_DIR = './index.html'       // Remplacez par le c hemin de votre site
+        NETLIFY_TOKEN = credentials('netlify_token') // Add your Netlify token in Jenkins credentials
+        GIT_CREDENTIALS = credentials('github_auth') // Replace 'github_auth' with your credentials ID
+        SITE_DIR = './index.html' // Replace with the path to your site
     }
 
     stages {
@@ -17,7 +17,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building zip file for deployment'
-                // Use curly braces to handle variable properly
+                // Use curly braces to handle variables properly
                 sh """
                 zip -r ${SITE_DIR}.zip .
                 echo 'Zip file created: ${SITE_DIR}.zip'
