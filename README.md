@@ -64,4 +64,4 @@ By following these steps, you can:
 
 Enjoy your streamlined deployment process!
 
-![Alt Text](C:\Users\a.yousfi\Desktop\ayoubbot\jenkinsNetlify\img.gif)
+![Alt Text](img.gif)
