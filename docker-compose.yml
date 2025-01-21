@@ -3,7 +3,7 @@ services:
   jenkins:
     build:
       context: .
-      dockerfile: Dockerfile.jenkins
+      dockerfile: Dockerfile
     container_name: jenkinsNetlify
     ports:
       - "8084:8084"
