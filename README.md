@@ -8,7 +8,7 @@ This guide outlines the process of deploying a static website on Netlify using J
 
 1. Create an HTML file (`index.html`) with a simple message like "Hello, World!".
 2. Create a `docker-compose.yml` file to manage Docker containers.
-3. Create a `Dockerfile.jenkins` to define the Jenkins container environment.
+3. Create a `Dockerfile` to define the Jenkins container environment.
 4. Create a `Jenkinsfile` to define the pipeline stages for automation.
 5. Initialize a new Git repository, commit all files, and push them to GitHub.
 
